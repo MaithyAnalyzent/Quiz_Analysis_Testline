@@ -9,14 +9,14 @@ def convert_to_structured_json(input_file_path, output_file_path):
         output_file_path (str): Path to save the structured JSON file.
     """
     try:
-        # Load the content of the input file
+       
         with open(input_file_path, 'r') as input_file:
             data = json.load(input_file)
 
-        # Structure the data
+       
         structured_data = {"quiz_attempts": data}
 
-        # Save the structured data to the output file
+       
         with open(output_file_path, 'w') as output_file:
             json.dump(structured_data, output_file, indent=4)
 
